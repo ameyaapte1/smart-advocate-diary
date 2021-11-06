@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">AdvocateDiary</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="network_error">No connection</string>
+    <string name="invalid_captcha">Invalid Captcha</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6152928645894519/7178324120</string>
+
+    <string-array name="purchaseItems">
+        <item>(Free) Watch an ad to add the Case.</item>
+        <item>(Paid) Purchase infinite cases and ad free app.</item>
+    </string-array>
+
+    <string-array name="districts">
+        <item>26,Ahmadnagar-अहमदनगर </item>
+        <item>5,Akola-अकोला </item>
+        <item>7,Amravati-अमरावती </item>
+        <item>19,Aurangabad-औरंगाबाद </item>
+        <item>27,Beed-बीड </item>
+        <item>10,Bhandara-भंडारा </item>
+        <item>4,Buldhana-बुलढाणा </item>
+        <item>13,Chandrapur-चंद्रपुर </item>
+        <item>2,Dhule-धुळे </item>
+        <item>12,Gadchiroli-गडचिरोली </item>
+        <item>11,Gondia-गोंदिया </item>
+        <item>3,Jalgaon-जळगाव </item>
+        <item>18,Jalna-जालना </item>
+        <item>34,Kolhapur-कोल्हापुर </item>
+        <item>28,Latur-लातुर </item>
+        <item>41,Maharashtra-Cooperative Courts-महाराष्ट्र सहकारी न्यायालय </item>
+        <item>42,Maharashtra-Family Courts-महाराष्ट्र - कुटुंब न्यायालय </item>
+        <item>40,Maharashtra-Industrial Labour Courts-महाराष्ट्र औद्योगिक व कामगार </item>
+        <item>43,Maharashtra-School Tribunals-महाराष्ट्र शाळा न्यायाधिकरण </item>
+        <item>37,Mumbai-City Civil Court-मुंबई-शहर दिवाणी कोर्ट </item>
+        <item>23,Mumbai-CMM Courts-मुंबई </item>
+        <item>39,Mumbai-Motor Accident Claims Tribunal-मुंबई-मोटर अपघात </item>
+        <item>38,Mumbai-Small Cause Court-मुंबई-लहान न्यायालय </item>
+        <item>9,Nagpur-नागपुर </item>
+        <item>15,Nanded-नांदेड </item>
+        <item>1,Nandurbar-नंदुरबार </item>
+        <item>20,Nashik-नाशिक </item>
+        <item>29,Osmanabad-उस्मानाबाद </item>
+        <item>17,Parbhani-परभणी </item>
+        <item>25,Pune-पुणे </item>
+        <item>24,Raigad-रायगड </item>
+        <item>32,Ratnagiri-रत्नागिरी </item>
+        <item>35,Sangli-सांगली </item>
+        <item>31,Satara-सातारा </item>
+        <item>33,Sindhudurg-सिंधुदुर्ग </item>
+        <item>30,Solapur-सोलापुर </item>
+        <item>21,Thane-ठाणे </item>
+        <item>8,Wardha-वर्धा </item>
+        <item>36,Washim-वाशीम </item>
+        <item>14,Yavatmal-यवतमाळ </item>
+    </string-array>
+
+    <string-array name="search_types">
+        <item>Party Name</item>
+        <item>Case Number</item>
+        <item>FIR Number</item>
+        <item>Advocate Name</item>
+    </string-array>
+
+    <string-array name="filter_types">
+        <item>Pending</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Decided</item>
+    </string-array>
+</resources>

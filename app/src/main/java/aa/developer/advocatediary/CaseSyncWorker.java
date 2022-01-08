@@ -178,46 +178,16 @@ public class CaseSyncWorker extends Worker {
     private String postJSONObject(String url, JSONObject jsonObject, boolean isNew) {
         String nullresult = "ERROR";
         try {
-
-            // Create a trust manager that does not validate certificate chains
-            TrustManager[] trustAllCerts = new TrustManager[] {new X509TrustManager() {
-                public java.security.cert.X509Certificate[] getAcceptedIssuers() {
-                    return null;
-                }
-                // Called reflectively by X509TrustManagerExtensions.
-                public void checkServerTrusted(X509Certificate[] certs, String authType, Socket socket) {
-                }
-
-                public void checkClientTrusted(X509Certificate[] certs, String authType) {
-                }
-                public void checkServerTrusted(X509Certificate[] certs, String authType) {
-                }
-            }
-            };
-
-            // Install the all-trusting trust manager
-//            SSLContext sc = SSLContext.getInstance("SSL");
-//            sc.init(null, trustAllCerts, new java.security.SecureRandom());
-//            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
-
-            // Create all-trusting host name verifier
-            HostnameVerifier allHostsValid = new HostnameVerifier() {
-                public boolean verify(String hostname, SSLSession session) {
-                    return true;
-                }
-            };
-
-            // Install the all-trusting host verifier
-            HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
-
-
             StringBuilder data = new StringBuilder();
             String key;
             Iterator<String> jsonIterator = jsonObject.keys();
             while (jsonIterator.hasNext()) {
                 key = jsonIterator.next();
-                data.append("&").append(key).append("=").append(jsonObject.get(key));
+                if(!key.equals("description")) {
+                    data.append("&").append(key).append("=").append(jsonObject.get(key));
+                }
             }
+            data.append("&lang=");
             data = new StringBuilder(data.substring(1));
             URL object = new URL(url);
 
